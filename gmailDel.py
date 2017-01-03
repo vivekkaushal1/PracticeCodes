@@ -9,7 +9,7 @@ print(connection_message)
 print (server.select("inbox"))
 
 #server.select("ALL MAIL")
-sender ='kundangarg551@gmail.com'
+sender ='' #senderEmail you want to delete.
 result_status, email_ids = server.search(None, '(FROM "%s")' % sender)
 emails = email_ids[0].split()
 
